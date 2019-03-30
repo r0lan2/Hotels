@@ -1,0 +1,19 @@
+﻿@page
+@model HotelsAdmin.Web.Pages.Hotels.ListModel
+@{
+}
+
+
+
+<h1>Hotels</h1>
+
+<table class="table">
+    @foreach (var hotel in Model.Hotels)
+    {
+    <tr>
+        <td>@hotel.Name</td>
+        <td>@hotel.Location</td>
+    </tr>
+    }
+
+</table>
